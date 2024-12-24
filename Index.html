@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Finanzas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+     
+
+   
+
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-light shadow-sm">
+        <nav class="navbar navbar-light container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="#">
+                <img src="assest/CAM caja de ahorro ministerial.jpeg" alt="Logo Finanzas" width="150">
+            </a>
+            <button class="btn btn-outline-secondary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                <img src="https://img.icons8.com/material-outlined/24/000000/menu--v1.png" alt="Menu Icon">
+            </button>
+            <ul class="navbar-nav d-none d-lg-flex flex-row gap-3 align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#servicio">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-warning">Acceso clientes</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Offcanvas Menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+            <ul class="navbar-nav flex-column text-center gap-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                </li>
+            </ul>
+            <button class="btn btn-warning w-100 mt-3">Acceso clientes</button>
+        </div>
+    </div>
+
+ 
+
+
+
+  <!-- Hero Section with Image Slider -->
+<section class="hero text-center py-7" style="height: 600px; margin-bottom: 80px; position: relative;">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="hero-img" style="background-image: url('assest/atm-operation-bank.jpg'); height: 600px; background-size: cover; background-position: center;"></div>
+                <div class="overlay"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-4 fw-bold text-white">¡Simplifica tus finanzas con nosotros!</h1>
+                    <p class="lead text-light">La mejor plataforma para gestionar tus finanzas desde cualquier lugar.</p>
+                    <button class="btn btn-light btn-lg">Ver promociones</button>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <div class="hero-img" style="background-image: url('assest/female-staff-using-credit-card-terminal-cash-counter.jpg'); height: 600px; background-size: cover; background-position: center;"></div>
+                <div class="overlay"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-4 fw-bold text-white">¡Simplifica tus finanzas con nosotros!</h1>
+                    <p class="lead text-light">La mejor plataforma para gestionar tus finanzas desde cualquier lugar.</p>
+                    <button class="btn btn-light btn-lg">Ver promociones</button>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <div class="hero-img" style="background-image: url('assest/bank-atm-operation-enter-password.jpg'); height: 600px; background-size: cover; background-position: center;"></div>
+                <div class="overlay"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-4 fw-bold text-white">¡Simplifica tus finanzas con nosotros!</h1>
+                    <p class="lead text-light">La mejor plataforma para gestionar tus finanzas desde cualquier lugar.</p>
+                    <button class="btn btn-light btn-lg">Ver promociones</button>
+                </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="carousel-item">
+                <div class="hero-img" style="background-image: url('assest/smiling-woman-withdrawing-money-from-cash-machine-while-using-smart-phone.jpg'); height: 600px; background-size: cover; background-position: center;"></div>
+                <div class="overlay"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-4 fw-bold text-white">¡Simplifica tus finanzas con nosotros!</h1>
+                    <p class="lead text-light">La mejor plataforma para gestionar tus finanzas desde cualquier lugar.</p>
+                    <button class="btn btn-light btn-lg">Ver promociones</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<!-- Bootstrap JS and CSS for Carousel -->
+
+
+<style>
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+        z-index: 1;
+    }
+
+    .carousel-caption {
+        z-index: 2; /* Ensure text and button appear above overlay */
+        position: absolute;
+        top: 35%; /* Moves the caption 35% from the top */
+        left: 50%;
+        transform: translateX(-50%); /* Centers the content horizontally */
+        color: white;
+        text-align: center;
+    }
+
+    .carousel-caption h1 {
+        font-size: 2.5rem; /* Slightly reduced size */
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds shadow for better visibility */
+    }
+
+    .carousel-caption p {
+        font-size: 1.125rem; /* Slightly smaller paragraph */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .carousel-caption button {
+        font-size: 1.125rem;
+        padding: 10px 20px;
+        text-transform: uppercase;
+    }
+
+    /* Media Queries for Responsive Design */
+    @media (max-width: 768px) {
+        .carousel-caption h1 {
+            font-size: 2rem; /* Smaller title on mobile */
+        }
+
+        .carousel-caption p {
+            font-size: 1rem; /* Smaller paragraph on mobile */
+        }
+
+        .carousel-caption button {
+            font-size: 1rem;
+            padding: 8px 16px; /* Smaller button */
+        }
+    }
+
+    @media (max-width: 576px) {
+        .carousel-caption h1 {
+            font-size: 1.5rem; /* Even smaller title on very small screens */
+        }
+
+        .carousel-caption p {
+            font-size: 0.9rem; /* Even smaller paragraph on very small screens */
+        }
+
+        .carousel-caption button {
+            font-size: 0.9rem;
+            padding: 6px 12px; /* Even smaller button */
+        }
+    }
+
+    /* Ensure proper visibility on mobile (especially Android) */
+    .carousel-caption h1, .carousel-caption p, .carousel-caption button {
+        z-index: 3; /* Ensure they are above the overlay */
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Servicios Section -->
+<section class="container py-5">
+    <h2 class="text-center fw-bold text-primary mb-4">Cajero de Ahorro Ministerial</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Servicio 1: Ahorros y Depósitos -->
+        <div class="col">
+            <div class="card h-100 shadow-sm service-card">
+                <i class="bx bx-wallet-alt fs-1 text-primary p-3"></i> <!-- Ícono de Ahorros -->
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Ahorros y Depósitos</h5>
+                    <p class="card-text">Facilitamos el depósito de tus ahorros en cualquier momento, garantizando la seguridad de tu dinero.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Acceder</a> <!-- Botón de Acceso -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Servicio 2: Retiros y Transferencias -->
+        <div class="col">
+            <div class="card h-100 shadow-sm service-card">
+                <i class="bx bx-transfer-alt fs-1 text-primary p-3"></i> <!-- Ícono de Transferencias -->
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Retiros y Transferencias</h5>
+                    <p class="card-text">Realiza retiros y transferencias de forma rápida y segura a cualquier banco o cuenta asociada.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Acceder</a> <!-- Botón de Acceso -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Servicio 3: Consultas de Saldo -->
+        <div class="col">
+            <div class="card h-100 shadow-sm service-card">
+                <i class="bx bx-search-alt fs-1 text-primary p-3"></i> <!-- Ícono de Consultas -->
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Consultas de Saldo</h5>
+                    <p class="card-text">Consulta tu saldo de manera inmediata, asegurando una visión clara de tus ahorros y movimientos.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Acceder</a> <!-- Botón de Acceso -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Servicio 4: Servicios de Pago -->
+        <div class="col">
+            <div class="card h-100 shadow-sm service-card">
+                <i class="bx bx-credit-card fs-1 text-primary p-3"></i> <!-- Ícono de Pago -->
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Servicios de Pago</h5>
+                    <p class="card-text">Paga tus facturas y servicios de manera eficiente a través de nuestra plataforma de pagos en línea.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Acceder</a> <!-- Botón de Acceso -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Servicio 5: Asesoría Financiera -->
+        <div class="col">
+            <div class="card h-100 shadow-sm service-card">
+                <i class="bx bx-briefcase-alt fs-1 text-primary p-3"></i> <!-- Ícono de Asesoría -->
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Asesoría Financiera</h5>
+                    <p class="card-text">Recibe asesoramiento personalizado para optimizar el manejo de tus finanzas personales y empresariales.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Acceder</a> <!-- Botón de Acceso -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Servicio 6: Aplicación Móvil -->
+        <div class="col">
+            <div class="card h-100 shadow-sm service-card">
+                <i class="bx bx-mobile-alt fs-1 text-primary p-3"></i> <!-- Ícono de Móvil -->
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Aplicación Móvil</h5>
+                    <p class="card-text">Accede a todos nuestros servicios a través de nuestra app móvil para gestionar tus finanzas de forma conveniente.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Acceder</a> <!-- Botón de Acceso -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section id="nosotros" style="background-color: #f9f9f9; padding: 40px 0;">
+    <div class="container">
+      <h2 style="text-align: center; font-size: 36px; color: #1f1f1f; margin-bottom: 30px;">Nosotros</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <p style="font-size: 18px; color: #333; line-height: 1.6;">
+            La <strong>Iglesia Evangélica Apostólica del Nombre de Jesús (IEANJESUS)</strong> es una organización cristiana pentecostal unitaria que se ha destacado por su crecimiento y compromiso con la evangelización, formación espiritual y ayuda comunitaria. Fundada en el contexto del movimiento pentecostal del siglo XX, la IEANJESUS ha desarrollado una fuerte presencia en América Latina, especialmente en Ecuador, y ha logrado expandirse a otros países gracias a su dedicación a la doctrina y misión cristiana.
+          </p>
+          <p style="font-size: 18px; color: #333; line-height: 1.6;">
+            La doctrina de la IEANJESUS se centra en la creencia en un único Dios que se manifiesta como Padre, Hijo y Espíritu Santo, pero sin aceptar la concepción tradicional de la Trinidad. Este enfoque doctrinal los lleva a enfatizar el <strong>bautismo en el nombre de Jesús</strong>, una práctica esencial para la salvación, según Hechos 2:38.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <img src="assest/images.jpg" alt="Imagen de la Iglesia" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+        </div>
+      </div>
+      <div class="row" style="margin-top: 40px;">
+        <div class="col-12">
+          <h3 style="font-size: 30px; color: #1f1f1f; margin-bottom: 20px;">Compromiso y Actividades</h3>
+          <p style="font-size: 18px; color: #333; line-height: 1.6;">
+            Además de su enfoque teológico, la IEANJESUS promueve un estilo de vida marcado por la santidad y la modestia. La iglesia se dedica a la evangelización a través de misiones urbanas y rurales, organizando eventos de adoración y formando líderes espirituales en su <strong>Centro de Estudios Bíblicos (CEBI)</strong>. Este centro capacita a sus miembros en teología, doctrina y liderazgo, fortaleciendo el conocimiento bíblico y la preparación para el ministerio.
+          </p>
+          <p style="font-size: 18px; color: #333; line-height: 1.6;">
+            La IEANJESUS también publica materiales informativos como <strong>El Mensajero Apostólico</strong>, que documenta sus eventos, reflexiones y avances. La iglesia sigue expandiéndose, estableciendo congregaciones en diversos países, adaptándose a las necesidades locales sin abandonar sus principios doctrinales. Las convenciones y conferencias anuales son una parte esencial de la vida comunitaria, donde se celebran logros y se comparten testimonios.
+          </p>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 40px;">
+        <div class="col-12">
+          <h3 style="font-size: 30px; color: #1f1f1f; margin-bottom: 20px;">Compromiso Social</h3>
+          <p style="font-size: 18px; color: #333; line-height: 1.6;">
+            La IEANJESUS no solo se dedica a la evangelización espiritual, sino también a la acción social. Esto incluye brindar apoyo a personas en situación de vulnerabilidad, proporcionar recursos básicos a comunidades necesitadas y asistir a familias en crisis. Este enfoque refleja el amor cristiano a través de actos concretos de servicio, complementando la misión espiritual de la iglesia.
+          </p>
+          <p style="font-size: 18px; color: #333; line-height: 1.6;">
+            Con su énfasis en la formación doctrinal, el compromiso con la comunidad y la santidad de vida, la IEANJESUS continúa creciendo y adaptándose a los desafíos del mundo moderno, utilizando recursos tecnológicos para llegar a más personas. Hoy en día, sigue siendo una iglesia influyente y respetada dentro del ámbito cristiano.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Sección de Nuestros Productos -->
+<section id="productos" class="py-5 bg-light">
+    <div class="container">
+        <div class="row text-center mb-4">
+            <div class="col">
+                <h2 class="display-4 text-dark">Nuestros Productos</h2>
+                <p class="lead text-muted">Encuentra la mejor selección de productos para mejorar tu experiencia financiera.</p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Producto 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card shadow-sm border-light">
+                    <img src="assest/product1.jpg" class="card-img-top" alt="Producto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto Premium</h5>
+                        <p class="card-text text-muted">Una descripción breve del producto que destaca sus principales características y beneficios.</p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card shadow-sm border-light">
+                    <img src="assest/product2.jpg" class="card-img-top" alt="Producto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto Estándar</h5>
+                        <p class="card-text text-muted">Descripción breve del producto, resaltando sus características únicas y cómo puede mejorar tu día a día.</p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Producto 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card shadow-sm border-light">
+                    <img src="assest/product3.jpg" class="card-img-top" alt="Producto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto Básico</h5>
+                        <p class="card-text text-muted">Descripción breve del producto con sus principales funcionalidades y cómo facilita tus finanzas.</p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- Sección de Promociones -->
+<section id="promociones" class="py-5" style="background: linear-gradient(135deg, #6a11cb, #2575fc); color: white;">
+    <div class="container">
+        <!-- Título Promociones -->
+        <div class="row text-center mb-4">
+            <div class="col">
+                <h2 class="display-4 text-light">¡Promociones Exclusivas para ti!</h2>
+                <p class="lead">Aprovecha nuestros beneficios exclusivos para clientes de ahorro. ¡Solo por tiempo limitado!</p>
+            </div>
+        </div>
+        <!-- Carrusel de Promociones -->
+        <div id="promotionsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-inner">
+                <!-- Promoción 1 -->
+                <div class="carousel-item active">
+                    <div class="promo-card text-center">
+                        <img src="assets/promo1.jpg" class="d-block w-100" alt="Promoción 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 class="fw-bold">Tasa de Interés Preferencial</h3>
+                            <p>Disfruta de una tasa de interés preferencial en tus ahorros. ¡Gana más por tu dinero!</p>
+                            <a href="#" class="btn btn-outline-light btn-lg">Ver Beneficio</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Promoción 2 -->
+                <div class="carousel-item">
+                    <div class="promo-card text-center">
+                        <img src="assets/promo2.jpg" class="d-block w-100" alt="Promoción 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 class="fw-bold">Ahorro Automático Gratis</h3>
+                            <p>Regístrate y activa el ahorro automático sin costo adicional. ¡Haz crecer tu dinero sin esfuerzo!</p>
+                            <a href="#" class="btn btn-outline-light btn-lg">Activar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Promoción 3 -->
+                <div class="carousel-item">
+                    <div class="promo-card text-center">
+                        <img src="assets/promo3.jpg" class="d-block w-100" alt="Promoción 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 class="fw-bold">Bonificación por Primer Depósito</h3>
+                            <p>Realiza tu primer depósito y recibe una bonificación del 5% adicional. ¡Solo por tiempo limitado!</p>
+                            <a href="#" class="btn btn-outline-light btn-lg">Aprovechar Oferta</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Controles del carrusel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#promotionsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#promotionsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Repetir Título Promociones -->
+        <div class="row text-center mt-4">
+            <div class="col">
+                <h2 class="display-4 text-light">¡No dejes pasar estas oportunidades únicas!</h2>
+                <p class="lead">Aprovecha los beneficios exclusivos para tus ahorros. Visita nuestra sucursal o accede a tu cuenta.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Estilos CSS -->
+<style>
+    .promo-card {
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .promo-card img {
+        height: 500px; /* Altura fija de la imagen */
+        object-fit: cover; /* Ajuste de imagen */
+        border-radius: 12px;
+    }
+
+    .carousel-caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    .carousel-caption h3 {
+        font-size: 2.5rem; /* Tamaño más grande para el título */
+    }
+
+    .carousel-caption p {
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption .btn {
+        padding: 12px 30px;
+        font-size: 1.1rem;
+        border-radius: 30px;
+        border: 2px solid #fff;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .carousel-caption .btn:hover {
+        background-color: #fff;
+        color: #2575fc;
+    }
+
+    /* Agregar transición suave */
+    .carousel-item {
+        transition: transform 0.5s ease;
+    }
+
+    .carousel-inner {
+        border-radius: 12px;
+    }
+</style>
+
+
+
+
+
+<!-- Sección de imagen como enlace a la izquierda y texto con chulitos a la derecha -->
+<section class="features-section py-5" style="background-color: #ffffff;">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Columna izquierda: Imagen como enlace -->
+            <div class="col-12 col-md-6 mb-4 mb-md-0 text-center">
+                <a href="tu-enlace-google-play.html">
+                    <img src="assest/disponible-en-google-play-badge-1.png" alt="Google Play Badge" class="img-fluid rounded shadow mb-3">
+                </a>
+                <a href="tu-enlace-app-store.html">
+                    <img src="assest/images.png" alt="App Store Badge" class="img-fluid rounded shadow">
+                </a>
+            </div>
+            
+            <!-- Columna derecha: Texto con chulitos -->
+            <div class="col-12 col-md-6">
+                <h2 class="mb-4">¿Por qué elegirnos?</h2>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="bx bx-check-circle text-success"></i> <strong>Servicio rápido</strong> - Entregamos resultados en tiempo récord.</li>
+                    <li class="mb-2"><i class="bx bx-check-circle text-success"></i> <strong>Soporte 24/7</strong> - Estamos disponibles para ayudarte en cualquier momento.</li>
+                    <li class="mb-2"><i class="bx bx-check-circle text-success"></i> <strong>Seguro y confiable</strong> - Protegemos tus datos con las mejores medidas de seguridad.</li>
+                    <li class="mb-2"><i class="bx bx-check-circle text-success"></i> <strong>Facilidad de uso</strong> - Nuestra plataforma es intuitiva y fácil de navegar.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Estilos CSS -->
+<style>
+    .features-section {
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .features-section h2 {
+        font-size: 2rem;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .features-section ul {
+        padding-left: 20px;
+    }
+
+    .features-section ul li {
+        font-size: 1rem;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    .features-section ul li i {
+        font-size: 1.5rem;
+        margin-right: 10px;
+    }
+
+    .features-section img {
+        max-width: 200px; /* Tamaño máximo de los badges */
+        margin: 0 auto; /* Centrado */
+        display: block;
+    }
+
+    /* Responsividad */
+    @media (max-width: 768px) {
+        .features-section img {
+            max-width: 150px; /* Tamaño reducido en dispositivos pequeños */
+        }
+    }
+</style>
+
+<!-- Boxicons -->
+<link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container py-5">
+        <div class="row justify-content-between align-items-center">
+            <!-- Sección izquierda: Logo y descripción -->
+            <div class="col-12 col-md-6 mb-4 mb-md-0">
+                <img src="assest/WhatsApp Image 2024-12-23 at 14.22.57.png" alt="Logo de la Empresa" class="img-fluid logo-footer mb-3">
+                <p class="text-light mb-0">Tu aliado para gestionar tus finanzas con facilidad y seguridad. Aprende más sobre nuestros servicios.</p>
+            </div>
+            
+            <!-- Sección central: Enlaces rápidos -->
+            <div class="col-12 col-md-3 mb-4 mb-md-0">
+                <h5 class="text-white">Enlaces rápidos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light">Inicio</a></li>
+                    <li><a href="#" class="text-light">Servicios</a></li>
+                    <li><a href="#" class="text-light">Nosotros</a></li>
+                    <li><a href="#" class="text-light">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <!-- Sección derecha: Redes sociales y contacto -->
+            <div class="col-12 col-md-3 text-md-end">
+                <h5 class="text-white">Síguenos</h5>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="bx bxl-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="bx bxl-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="bx bxl-linkedin"></i></a>
+                </div>
+               
+            </div>
+        </div>
+        
+        <!-- Derechos reservados -->
+        <div class="row">
+            <div class="col-12 text-center mt-4">
+                <p class="text-light mb-0">&copy; 2024 CAM. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Estilo CSS -->
+<style>
+    /* Estilo general del footer */
+    footer {
+        background-color: #2c3e50; /* Fondo gris oscuro */
+        color: #bfbfbf;
+        font-family: 'Arial', sans-serif;
+        border-top: 4px solid #ff5733;
+    }
+
+    footer .logo-footer {
+        max-width: 150px;
+    }
+
+    footer h5 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    footer a {
+        color: #bfbfbf;
+        text-decoration: none;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    footer a:hover {
+        color: #ff5733;
+        transform: translateX(5px);
+    }
+
+    footer .social-icons {
+        margin-top: 20px;
+    }
+
+    footer .social-icon {
+        color: #bfbfbf;
+        font-size: 28px;
+        margin-right: 20px;
+        transition: color 0.3s ease;
+    }
+
+    footer .social-icon:hover {
+        color: #ff5733;
+        transform: translateY(-5px);
+    }
+
+    footer .btn-light {
+        background-color: transparent;
+        border: 2px solid #ff5733;
+        color: #ff5733;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    footer .btn-light:hover {
+        background-color: #ff5733;
+        color: white;
+    }
+
+    /* Derechos reservados */
+    footer .row p {
+        font-size: 0.9rem;
+        color: #bfbfbf;
+    }
+
+    /* Responsividad */
+    @media (max-width: 768px) {
+        footer .social-icons {
+            display: flex;
+            justify-content: center;
+        }
+        footer .social-icon {
+            margin: 0 10px;
+        }
+    }
+</style>
+
+<!-- Boxicons para los íconos -->
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+ 
+
+
+
+
+
+<!-- Bootstrap JS y CSS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
